@@ -45,17 +45,32 @@ int main(int argc, const char * argv[])
         
     }
     
-    // 4. even sort
+    // 4. even bubble sort
     
-    for(int i = 0; i < numOfEven - 1; i++)
+//    for(int i = 0; i < numOfEven - 1; i++)
+//    {
+//        for(int j = 1; j < numOfEven - i; j++)
+//        {
+//            if(arrEven[j - 1] > arrEven[j])
+//            {
+//                int temp = arrEven[j - 1];
+//                arrEven[ j - 1] = arrEven[j];
+//                arrEven[j] = temp;
+//            }
+//        }
+//    }
+    
+    //4. even selection sort
+    
+    for(int i = 0; i < numOfEven; i++)
     {
-        for(int j = 1; j < numOfEven - i; j++)
+        for(int j = i; j < numOfEven; j++)
         {
-            if(arrEven[j - 1] > arrEven[j])
+            if(arrEven[j] < arrEven[i])
             {
-                int temp = arrEven[j - 1];
-                arrEven[ j - 1] = arrEven[j];
-                arrEven[j] = temp;
+                int temp = arrEven[j];
+                arrEven[j] = arrEven[i];
+                arrEven[i] = temp;
             }
         }
     }
