@@ -9,12 +9,14 @@ int main(int argc, const char * argv[])
     int num[10];
     int arrOdd[10], arrEven[10];
     int numOfOdd = 0, numOfEven = 0;
+    //1. input
     cout << "Input 10 numbers: "<< endl;
     for(int i = 0; i < 10; i++)
     {
         cin >> num[i];
     }
     cout <<"Your number is: "<<endl;
+    //2. sperate even and odd
     for(int i = 0; i < 10; i++)
     {
        if(num[i] % 2 == 0)
@@ -28,7 +30,7 @@ int main(int argc, const char * argv[])
            numOfOdd++;
        }
     }
-    // odd
+    // 3. odd sort
     for(int i = 0; i < numOfOdd - 1; i++)
     {
         for(int j = 1; j < numOfOdd - i; j++)
@@ -43,7 +45,7 @@ int main(int argc, const char * argv[])
         
     }
     
-    // even
+    // 4. even sort
     
     for(int i = 0; i < numOfEven - 1; i++)
     {
@@ -57,7 +59,7 @@ int main(int argc, const char * argv[])
             }
         }
     }
-    //print
+    //5. print Output
     
     for(int i = 0; i < numOfOdd; i++)
     {
