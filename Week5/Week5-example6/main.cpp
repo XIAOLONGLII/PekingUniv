@@ -1,4 +1,5 @@
 //Q: 10个数，奇数从大到小，偶数从小到大
+//模块组成的！（重要）
 
 // seperated with Odd and Even first, then sort.
 #include <iostream>
