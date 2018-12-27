@@ -26,6 +26,8 @@ int main(int argc, const char * argv[]) {
     int b = 5;
     cout << a << endl;
     cout << b << endl;
+    int c = -123;
+    cout<<"hex="  << hex << c << endl;
     
 
     
