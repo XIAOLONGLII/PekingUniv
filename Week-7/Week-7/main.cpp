@@ -45,5 +45,14 @@ int main(int argc, const char * argv[]) {
     int e = 037777777605;
     cout <<"十进制："<< dec << e << endl;
     cout <<"十六进制："<< hex << e << endl;
+    
+    // 7
+    unsigned int z = 0xFFFFFFFF;
+    cout <<"Unsighed Max "<< dec << z << endl; //42亿
+    
+    //8
+    signed int y = 0x7FFFFFFF;
+    cout <<"Signed Max "<< dec << y << endl; //21亿
+    
  
 }
