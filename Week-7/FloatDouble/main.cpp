@@ -21,5 +21,10 @@ int main(int argc, const char * argv[])
     // 3. 3.141592653589793115997963468544185161590576171875 after 16 digits, it won't be correct anymore.
     cout << setprecision(100) << e << endl;
     
+    //4
+    float f = 0, g = 0;
+    f = 123456.789e5;
+    g = a + 20;
+    cout << setprecision(20) << g << endl;
     
 }
