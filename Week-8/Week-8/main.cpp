@@ -28,9 +28,13 @@ int main(int argc, const char * argv[])
     cout << "v= "<< v<<endl;
     cout << "v2= "<< v2 <<endl;
     
-    int n = 0, m = 0;
+    int n = 0, m = 1;
     cout << n++ << " "<< n << endl;
     cout << ++m  << " "<< m << endl;
+    int l = m = n;
+    cout << l << endl;
+    
+    
 
    
 }
