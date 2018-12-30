@@ -27,6 +27,10 @@ int main(int argc, const char * argv[])
     int v2 = x|y;
     cout << "v= "<< v<<endl;
     cout << "v2= "<< v2 <<endl;
+    
+    int n = 0, m = 0;
+    cout << n++ << " "<< n << endl;
+    cout << ++m  << " "<< m << endl;
 
    
 }
