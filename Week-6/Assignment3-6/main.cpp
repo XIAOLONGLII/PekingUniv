@@ -15,7 +15,7 @@ using namespace std;
 int main(int argc, const char * argv[])
 {
     int number;
-    cout << "Enter a 3 digits number" << endl;
+    //cout << "Enter a 3 digits number" << endl;
     cin >> number;
     vector<int> v;
     while( number > 0)

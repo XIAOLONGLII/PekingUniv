@@ -15,7 +15,7 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     
     int n, x, y;
-    cout << "How many apples total:  and what is x and  y"<< endl;
+    //cout << "How many apples total:  and what is x and  y"<< endl;
     cin >> n >> x >> y;
     
     int applesEat = y / x;

@@ -17,7 +17,7 @@ int main(int argc, const char * argv[])
     vector<int> odd;
     vector<int> even;
     
-    cout<< "Input 6 integers: "<<endl;
+    //cout<< "Input 6 integers: "<<endl;
     for (int i = 0; i < 6; i++)
     {
         cin >> num;
@@ -48,8 +48,8 @@ int main(int argc, const char * argv[])
             evenMax = even[i];
         }
     }
-    cout << "Max odd = " << oddMax << endl;
-    cout << "Max even = " << evenMax << endl;
-    cout << "difference is = " << abs(oddMax - evenMax) << endl;
+//    cout /*<< "Max odd = "*/ << oddMax << endl;
+//    cout /*<< "Max even = " */<< evenMax << endl;
+    cout /* << "difference is = " */<< abs(oddMax - evenMax) << endl;
   
 }

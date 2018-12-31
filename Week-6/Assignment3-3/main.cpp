@@ -16,13 +16,13 @@ const double pi = 3.1415926535897;
 
 int main(int argc, const char * argv[])
 {
-    cout << "Enter r and h: "<< endl;
+    //cout << "Enter r and h: "<< endl;
     double r, h, volume;
-    cin >> r >> h;
+    cin >> h >> r;
     volume = pi * pow(r,2) * h;
-    cout << volume << endl;
+    //cout << volume << endl;
     int num = VOLUME / volume;
-    cout << num << endl;
+
     if (remainder(VOLUME, volume) != 0){
         num++;
     }

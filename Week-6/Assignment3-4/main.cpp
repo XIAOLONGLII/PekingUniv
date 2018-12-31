@@ -14,10 +14,10 @@ int main(int argc, const char * argv[])
     int grade;
     vector<int> v;
     
-    cout << "How many students: "<<endl;
+    //cout << "How many students: "<<endl;
     cin >> n;
     
-    cout << "Enter the grades: " << endl;
+    //cout << "Enter the grades: " << endl;
     for(int i = 0; i < n; i++)
     {
         cin >> grade;
