@@ -14,7 +14,7 @@ int main(int argc, const char * argv[])
     vector<int> my_v;
     vector<bool> true_v;
     
-    cout << "Enter how many numbers n and the two number's sum k  ";
+    //cout << "Enter how many numbers n and the two number's sum k  ";
     cin >> n >> k;
     
     for(int i = 0; i < n; i++)
