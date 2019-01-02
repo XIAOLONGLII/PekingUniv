@@ -1,15 +1,18 @@
-//
-//  main.cpp
-//  Week-10
-//
-//  Created by Xiaolong Li on 12/31/18.
-//  Copyright © 2018 Xiaolong Li. All rights reserved.
-//
+// reverse a string
+// string s = "hello world!"
+
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main(int argc, const char * argv[])
+{
+    string s = "Hello world!";
+    for(int i = 0; i < s.length() / 2; i++)
+    {
+        int temp = s[i];
+        s[i] = s[ s.length() - i - 1];
+        s[ s.length() - i - 1] = temp;
+    }
+    cout << s << endl;
 }
