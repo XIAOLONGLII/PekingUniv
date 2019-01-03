@@ -16,7 +16,7 @@ string LongestWord(string str) {
         {
             maxword = tempstring;
         }
-        if (str[i]!=' ')
+        if (str[i]!=' ' && str[i] != '.')
         {
             tempstring = tempstring + str[i];
         }
@@ -28,66 +28,65 @@ string LongestWord(string str) {
     return maxword;
     
 }
-string LongestWord2(string str)
-{
-    string temp;
-    string maxWord;
-    int len = str.size();
-    for(int i = 0; i < len; i++)
-    {
-      
-        if(str[i] != ' ')
-        {
-            temp = temp + str[i];
-        }
-        else
-        {
-            temp = '\0';
-        }
-        
-        if(temp.length() > maxWord.length())
-        {
-            maxWord = temp;
-        }
-    }
-    return maxWord;
-    
-}
-
-
-void Longestword3(string str)
-{
-    string word = "";
-    string maxWord = "";
-    for(int i = 0; i < str.size(); i++)
-    {
-        if( str[i] != ' ')
-        {
-            word = word + str[i];
-        }
-        else
-        {
-            word = '\0';
-        }
-        if( word.length() > maxWord.length())
-        {
-            maxWord = word;
-        }
-    }
-    cout << word;
-}
+//string LongestWord2(string str)
+//{
+//    string temp;
+//    string maxWord;
+//    int len = str.size();
+//    for(int i = 0; i < len; i++)
+//    {
+//
+//        if(str[i] != ' ')
+//        {
+//            temp = temp + str[i];
+//        }
+//        else
+//        {
+//            temp = '\0';
+//        }
+//
+//        if(temp.length() > maxWord.length())
+//        {
+//            maxWord = temp;
+//        }
+//    }
+//    return maxWord;
+//
+//}
+//
+//
+//void Longestword3(string str)
+//{
+//    string word = "";
+//    string maxWord = "";
+//    for(int i = 0; i < str.size(); i++)
+//    {
+//        if( str[i] != ' ')
+//        {
+//            word = word + str[i];
+//        }
+//        else
+//        {
+//            word = '\0';
+//        }
+//        if( word.length() > maxWord.length())
+//        {
+//            maxWord = word;
+//        }
+//    }
+//    cout << word;
+//}
 
 
     
 
 
 int main() {
-    cout << "HEY";
     string s;
     getline(cin, s);
     cout << LongestWord(s) << endl;
-    cout << LongestWord2(s) << endl;
-    Longestword3(s);
+//    cout << LongestWord2(s) << endl;
+//    Longestword3(s);
     return 0;
     
 }
